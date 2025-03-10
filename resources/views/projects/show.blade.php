@@ -18,5 +18,6 @@
             <p><strong>Project Description:</strong> {{ $project->project_description }}</p>
         </div>
     </div>
+    <a href="{{ route('projects.edit', $project) }}" class="btn btn-warning mt-2">Edit Project</a>
     <a href="{{ route('projects.index') }}" class="btn btn-primary mt-2">Back to Projects</a>
 @endsection
