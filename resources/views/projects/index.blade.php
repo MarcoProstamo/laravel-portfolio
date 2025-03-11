@@ -11,6 +11,7 @@
             <li>{{ $project['project_name'] }}</li>
             <li>{{ $project['client_name'] }}</li>
             <li>{{ $project['project_description'] }}</li>
+            <li>Caterogia: {{ $project->type->name }}</li>
             <li><a href="projects/{{ $project['id'] }}">See more...</a></li>
             <br>
         @endforeach
