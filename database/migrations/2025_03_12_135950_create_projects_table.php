@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('project_name');
             $table->string('client_name');
             $table->text('project_description');
+            $table->foreignId("type_id")->constrained();
             $table->timestamps();
         });
     }

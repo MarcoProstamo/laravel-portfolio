@@ -19,6 +19,7 @@ class ProjectSeeder extends Seeder
             $newProject->project_name = $faker->unique()->word;
             $newProject->client_name = $faker->name();
             $newProject->project_description = $faker->paragraph();
+            $newProject->type_id = rand(1, 10);
             $newProject->save();
         }
     }

@@ -18,7 +18,7 @@ class TypeSeeder extends Seeder
         for ($i = 0; $i < 10; $i++) {
             $newType = new Type();
             $newType->name = $faker->word();
-            $newType->description = $faker->paragraph();
+            $newType->description = $faker->sentence();
             $newType->save();
         }
     }
